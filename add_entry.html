@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/site.css" />
+    <link rel="stylesheet" href="styles/site_add_entry.css" />
     <script src="./data/blogdata.js"></script>
-    <script src="./scripts/blogscript.js"></script>
+    <script src="./scripts/blogscript_add_entry.js"></script>
 </head>
 
 <body>
@@ -18,8 +18,8 @@
         <h2 class="wordmark">Star Trek</h2>
         <nav class="secondary">
             <ul>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="./add_entry.html">Add Entry</a></li>
                 <li><a href="./add_character.html">Add Character</a></li>
                 <li class="login"><a href="#">Login</a></li>
             </ul>
@@ -35,14 +35,29 @@
         </nav>
     </header>
     <main>
-        <div class="explore">
-            <h1>The Top 3 Captain's Blogs</h1>
-            <div class="sections" id="blogs-container"></div>
-        </div>
-        <div class="characters">
-            <h2>Characters of Most Interest</h2>
-            <p>In any galaxy, any quadrant, near or far, these characters will make the adventure even more interesting.</p>
-            <div class="articles" id="characters-container"></div>
+        <div class="form-container">
+            <form id="blog-entry-form">
+                <h1>Add a Blog Entry:</h1>
+                <div class="form-group">
+                    <label for="blog">Blog</label>
+                    <select id="blog" name="blog">
+                        <!-- Options to be populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="stardate">Stardate</label>
+                    <input type="text" id="stardate" name="stardate" required>
+                </div>
+                <div class="form-group">
+                    <label for="enterer">Enterer</label>
+                    <input type="text" id="enterer" name="enterer" required>
+                </div>
+                <div class="form-group">
+                    <label for="entry">Entry</label>
+                    <textarea id="entry" name="entry" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
         </div>
     </main>
     <footer>

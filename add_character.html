@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/site.css" />
+    <link rel="stylesheet" href="styles/site_add_character.css" />
     <script src="./data/blogdata.js"></script>
-    <script src="./scripts/blogscript.js"></script>
+    <script src="./scripts/blogscript_add_character.js"></script>
 </head>
 
 <body>
@@ -18,9 +18,9 @@
         <h2 class="wordmark">Star Trek</h2>
         <nav class="secondary">
             <ul>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="./add_entry.html">Add Entry</a></li>
-                <li><a href="./add_character.html">Add Character</a></li>
                 <li class="login"><a href="#">Login</a></li>
             </ul>
         </nav>
@@ -35,14 +35,35 @@
         </nav>
     </header>
     <main>
-        <div class="explore">
-            <h1>The Top 3 Captain's Blogs</h1>
-            <div class="sections" id="blogs-container"></div>
-        </div>
-        <div class="characters">
-            <h2>Characters of Most Interest</h2>
-            <p>In any galaxy, any quadrant, near or far, these characters will make the adventure even more interesting.</p>
-            <div class="articles" id="characters-container"></div>
+        <div class="form-container">
+            <form id="blog-character-form">
+                <h1>Add a Character:</h1>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="quotes">Quotes</label>
+                    <textarea id="quotes" name="quotes" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image URL</label>
+                    <input type="text" id="image" name="image" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
         </div>
     </main>
     <footer>
