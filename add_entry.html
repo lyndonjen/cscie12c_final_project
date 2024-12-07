@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/site_add_entry.css" />
+    <link rel="stylesheet" href="styles/site.css" />
     <script src="./data/blogdata.js"></script>
     <script src="./scripts/blogscript_add_entry.js"></script>
 </head>
@@ -34,30 +34,32 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="form-container">
-            <form id="blog-entry-form">
-                <h1>Add a Blog Entry:</h1>
-                <div class="form-group">
-                    <label for="blog">Blog</label>
-                    <select id="blog" name="blog">
-                        <!-- Options to be populated by JavaScript -->
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="stardate">Stardate</label>
-                    <input type="text" id="stardate" name="stardate" required>
-                </div>
-                <div class="form-group">
-                    <label for="enterer">Enterer</label>
-                    <input type="text" id="enterer" name="enterer" required>
-                </div>
-                <div class="form-group">
-                    <label for="entry">Entry</label>
-                    <textarea id="entry" name="entry" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
+    <main class="main-add-entry">
+        <div class="explore-add-entry">
+            <div class="form-container-add-entry">
+                <form id="blog-entry-form">
+                    <h1>Add a Blog Entry:</h1>
+                    <div class="form-group-add-entry">
+                        <label for="blog">Blog</label>
+                        <select id="blog" name="blog">
+                            <!-- Options to be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="form-group-add-entry">
+                        <label for="stardate">Stardate</label>
+                        <input type="text" id="stardate" name="stardate" required>
+                    </div>
+                    <div class="form-group-add-entry">
+                        <label for="enterer">Enterer</label>
+                        <input type="text" id="enterer" name="enterer" required>
+                    </div>
+                    <div class="form-group-add-entry">
+                        <label for="entry">Entry</label>
+                        <textarea id="entry" name="entry" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn-add-entry">Submit</button>
+                </form>
+            </div>
         </div>
     </main>
     <footer>

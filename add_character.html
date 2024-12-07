@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/site_add_character.css" />
+    <link rel="stylesheet" href="styles/site.css" />
     <script src="./data/blogdata.js"></script>
     <script src="./scripts/blogscript_add_character.js"></script>
 </head>
@@ -34,36 +34,38 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="form-container">
-            <form id="blog-character-form">
-                <h1>Add a Character:</h1>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" id="title" name="title" required>
-                </div>
-                <div class="form-group">
-                    <label for="location">Location</label>
-                    <input type="text" id="location" name="location" required>
-                </div>
-                <div class="form-group">
-                    <label for="notes">Notes</label>
-                    <textarea id="notes" name="notes" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="quotes">Quotes</label>
-                    <textarea id="quotes" name="quotes" rows="2" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="image">Image URL</label>
-                    <input type="text" id="image" name="image" required>
-                </div>
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
+    <main class="main-add-character">
+        <div class="explore-add-character">
+            <div class="form-container-add-character">
+                <form id="blog-character-form">
+                    <h1>Add a Character:</h1>
+                    <div class="form-group-add-character">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group-add-character">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group-add-character">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <div class="form-group-add-character">
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group-add-character">
+                        <label for="quotes">Quotes</label>
+                        <textarea id="quotes" name="quotes" rows="2" required></textarea>
+                    </div>
+                    <div class="form-group-add-character">
+                        <label for="image">Image URL</label>
+                        <input type="text" id="image" name="image" required>
+                    </div>
+                    <button type="submit" class="submit-btn-add-character">Submit</button>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
