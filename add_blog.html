@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/site.css" />
     <script src="./data/blogdata.js"></script>
-    <script src="./scripts/blogscript.js"></script>
+    <script src="./scripts/blogscript_add_blog.js"></script>
 </head>
 
 <body>
@@ -18,8 +18,8 @@
         <h2 class="wordmark">Star Trek</h2>
         <nav class="secondary">
             <ul>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="./add_blog.html">Add Blog</a></li>
                 <li><a href="./add_entry.html">Add Entry</a></li>
                 <li><a href="./add_character.html">Add Character</a></li>
                 <li class="reset"><a href="./index.html" id="reset_link">Reset</a></li>
@@ -36,15 +36,30 @@
             </ul>
         </nav>
     </header>
-    <main class="main-page">
-        <div class="blogs">
-            <h1>The Top 3 Captain's Blogs (with most recent four blog entries shown)</h1>
-            <div class="sections" id="blogs-container"></div>
-        </div>
-        <div class="characters">
-            <h2>Characters of Most Interest</h2>
-            <p>In any galaxy, any quadrant, near or far, these characters will make the adventure even more interesting.</p>
-            <div class="articles" id="characters-container"></div>
+    <main class="main-add-blog">
+        <div class="explore-add-blog">
+            <div class="form-container-add-blog">
+                <form id="blog-blog-form">
+                    <h1>Add a Blog:</h1>
+                    <div class="form-group-add-blog">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group-add-blog">
+                        <label for="captain">Captain</label>
+                        <input type="text" id="captain" name="captain" required>
+                    </div>
+                    <div class="form-group-add-blog">
+                        <label for="ship_station">Ship / Station</label>
+                        <input type="text" id="ship_station" name="ship_station" required>
+                    </div>
+                    <div class="form-group-add-blog">
+                        <label for="image">Image URL</label>
+                        <input type="text" id="image" name="image" required>
+                    </div>
+                    <button type="submit" class="submit-btn-add-blog">Submit</button>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
