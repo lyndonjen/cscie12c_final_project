@@ -171,11 +171,14 @@ header nav.secondary ul li:last-child {
 /* ----------------------------- */
 
 /* -----------------------------
-   Styles for Blogs
+   Styles for Blogs area (main page)
    ----------------------------- */
 main {
     font-family: 'Roboto', Arial, sans-serif;
     color: #FFFFFF;
+}
+
+.main-page {
     height: 1380px;
     padding: 0;
     width: 100%;
@@ -184,7 +187,7 @@ main {
     background-color: #EBEBEB;
 }
 
-.explore {
+.blogs {
     display: flex;
     flex-wrap: wrap;
     background-image: url("../images/space.jpg");
@@ -276,7 +279,7 @@ section ul li:nth-child(2)::before {
 /* ----------------------------- */
 
 /* -----------------------------
-   Styles for Characters
+   Styles for Characters area (main page)
    ----------------------------- */
 
 .characters {
@@ -363,6 +366,152 @@ article ul li:nth-child(4)::before {
     content: url('../images/quote_icon.png');
     width: 22px;
     height: 22px;
+}
+
+/* ----------------------------- */
+
+/* -----------------------------
+   Styles for "Add Entry" (add-entry page)
+   ----------------------------- */
+.main-add-entry {
+    height: 530px;
+    padding: 0;
+    width: 100%;
+    max-width: 1350px;
+    box-sizing: border-box;
+    background-color: #EBEBEB;
+}
+
+.explore-add-entry {
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    height: 450px;
+    justify-content: space-between;
+}
+
+
+/* ----------------------------- */
+
+/* -----------------------------
+   Styles for Add Entry form
+   ----------------------------- */
+
+.form-container-add-entry {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    color: #FFFFFF;
+    background-color: var(--tng-red);
+}
+
+.form-group-add-entry {
+    margin-bottom: 15px;
+}
+
+.form-group-add-entry label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group-add-entry input, .form-group-add-entry select, .form-group-add-entry textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group-add-entry textarea {
+    resize: vertical;
+}
+
+.submit-btn-add-entry {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn-add-entry:hover {
+    background-color: #0056b3;
+}
+
+/* -----------------------------
+   Styles for "Add Character" (add-character page)
+   ----------------------------- */
+.main-add-character {
+    height: 700px;
+    padding: 0;
+    width: 100%;
+    max-width: 1350px;
+    box-sizing: border-box;
+    background-color: #EBEBEB;
+}
+
+.explore-add-character {
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    height: 680px;
+    justify-content: space-between;
+}
+
+
+/* ----------------------------- */
+
+/* -----------------------------
+   Styles for Add Character form
+   ----------------------------- */
+
+.form-container-add-character {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    color: #FFFFFF;
+    background-color: var(--tng-red);
+}
+
+.form-group-add-character {
+    margin-bottom: 15px;
+}
+
+.form-group-add-character label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group-add-character input, .form-group-add-character select, .form-group-add-character textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group-add-character textarea {
+    resize: vertical;
+}
+
+.submit-btn-add-character {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn-add-character:hover {
+    background-color: #0056b3;
 }
 
 /* ----------------------------- */
