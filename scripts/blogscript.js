@@ -1,4 +1,4 @@
-// note, expects "data/blogdata.js" to be loaded first.
+// Note, expects "data/blogdata.js" to be loaded first.
 document.addEventListener("DOMContentLoaded", function () {
     try {
         console.log("DOM is loaded!");
@@ -120,10 +120,14 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Character is loaded!");
         });
 
+        // Logic for Reset link
+        const reset_link = document.getElementById("reset_link");
+        reset_link.addEventListener("click", function () {
+            // Reset blogData to blogDataInitial
+            blogData = blogDataInitial;
+            localStorage.setItem('blogData', JSON.stringify(blogData));
+        });
     } catch (error) {
-        //#####
-        const blogsContainer = document.getElementById("blogs-container");
-        blogsContainer.innerHTML += String(error);
-        console.error('Error loading blog data:', error);
+        console.error('Error:', error);
     }
 });

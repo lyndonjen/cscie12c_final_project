@@ -1,4 +1,4 @@
-// note, expects "data/blogdata.js" to be loaded first.
+// Note, expects "data/blogdata.js" to be loaded first.
 document.addEventListener("DOMContentLoaded", function () {
     try {
         console.log("DOM is loaded!");
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             blogSelect.appendChild(option);
         });
 
-        // Submit button
+        // Logic for Add Entry form
         document.getElementById('blog-entry-form').addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -37,6 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Clear the form
             event.target.reset();
+        });
+
+        // Logic for Reset link
+        const reset_link = document.getElementById('reset-link');
+        reset_link.addEventListener('click', function (event) {
+            // Reset blogData to blogDataInitial
+            blogData = blogDataInitial;
+            localStorage.setItem('blogData', JSON.stringify(blogData));
         });
     } catch (error) {
         console.error('Error:', error);

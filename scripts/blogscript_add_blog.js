@@ -3,26 +3,23 @@ document.addEventListener("DOMContentLoaded", function () {
     try {
         console.log("DOM is loaded!");
 
-        // Logic for Add Character form
-        document.getElementById('blog-character-form').addEventListener('submit', function (event) {
+        // Logic for Add Blog form
+        document.getElementById('blog-blog-form').addEventListener('submit', function (event) {
             event.preventDefault();
 
             // Gather form data
             const name = document.getElementById('name').value;
-            const title = document.getElementById('title').value;
-            const location = document.getElementById('location').value;
-            const notes = document.getElementById('notes').value;
-            const quotes = document.getElementById('quotes').value;
+            const captain = document.getElementById('captain').value;
+            const ship_station = document.getElementById('ship_station').value;
             const image = document.getElementById('image').value;
 
-            // Add the new character to the front of the Characters
-            blogData.characters.unshift({
+            // Add the new blog to the front of the Blogs, note empty entries
+            blogData.blogs.unshift({
                 name: name,
-                title: title,
-                location: location,
-                notes: notes,
-                quotes: quotes,
-                image: image
+                captain: captain,
+                ship_station: ship_station,
+                image: image,
+                entries: []
             });
 
             // Save the updated blogData back to localStorage
