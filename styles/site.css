@@ -171,7 +171,7 @@ header nav.secondary ul li:last-child {
 /* ----------------------------- */
 
 /* -----------------------------
-   Styles for Blogs area (main page)
+   Styles for Blogs area (index.html)
    ----------------------------- */
 main {
     font-family: 'Roboto', Arial, sans-serif;
@@ -279,7 +279,7 @@ section ul li:nth-child(2)::before {
 /* ----------------------------- */
 
 /* -----------------------------
-   Styles for Characters area (main page)
+   Styles for Characters area (index.html)
    ----------------------------- */
 
 .characters {
@@ -371,7 +371,81 @@ article ul li:nth-child(4)::before {
 /* ----------------------------- */
 
 /* -----------------------------
-   Styles for "Add Entry" (add-entry page)
+   Styles for "Add Blog" (add_blog.html)
+   ----------------------------- */
+.main-add-blog {
+    height: 480px;
+    padding: 0;
+    width: 100%;
+    max-width: 1350px;
+    box-sizing: border-box;
+    background-color: #EBEBEB;
+}
+
+.explore-add-blog {
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    height: 400px;
+    justify-content: space-between;
+}
+
+
+/* ----------------------------- */
+
+/* -----------------------------
+   Styles for Add Blog form
+   ----------------------------- */
+
+.form-container-add-blog {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    color: #FFFFFF;
+    background-color: var(--tng-red);
+}
+
+.form-group-add-blog {
+    margin-bottom: 15px;
+}
+
+.form-group-add-blog label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group-add-blog input, .form-group-add-blog select, .form-group-add-blog textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group-add-blog textarea {
+    resize: vertical;
+}
+
+.submit-btn-add-blog {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn-add-blog:hover {
+    background-color: #0056b3;
+}
+
+/* ----------------------------- */
+
+/* -----------------------------
+   Styles for "Add Entry" (add_entry.html)
    ----------------------------- */
 .main-add-entry {
     height: 530px;
@@ -443,7 +517,7 @@ article ul li:nth-child(4)::before {
 }
 
 /* -----------------------------
-   Styles for "Add Character" (add-character page)
+   Styles for "Add Character" (add_character.html)
    ----------------------------- */
 .main-add-character {
     height: 700px;
