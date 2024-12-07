@@ -126,9 +126,8 @@ let blogDataInitial = {
     ]
 };
 
-// Use any localStorage's "blogData", used to pass updated data
+// Use localStorage's "blogData", used to pass updated data
 let blogDataTest = localStorage.getItem("blogData");
-let blogData;
 
 if (blogDataTest === null) {
     blogData = blogDataInitial;
